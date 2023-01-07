@@ -49,7 +49,8 @@ class Data_mahasiswa:
             print("\nNIM Data {0} berhasil di ubah".format(input_nama))
         else:
             print("NAMA {0} TIDAK ADA! / ANDA BELUM MENAMBAHKAN DATA".format(input_nama))
-    
+
+        # Mencari data yg sudah di input
     def cari(self):
         print("Mencari data")
         print("="*15)
