@@ -9,7 +9,7 @@ print("="*20)
 
 while True: 
     print()
-    menu = input("[(T)ambah, (I)nput Nilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")
+    menu = input("[(T)ambah, (I)nputNilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")
     print("~"*78)
     print()
 

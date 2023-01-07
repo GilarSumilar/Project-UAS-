@@ -24,6 +24,7 @@ class Data_mahasiswa:
     # Menghapus inputan nama
     def hapus(self, nama):
         print("Hapus data inputan")
+        print("="*15)
         nama = (input("\nMasukan Nama berdasarkan inputan : "))
         if nama in self.nama:
             print("Data {0} berhasil di hapus".format(nama))
@@ -36,16 +37,18 @@ class Data_mahasiswa:
         else:
             print("NAMA {0} TIDAK ADA!".format(nama))
     
-        # Mengubah data nama inputan
+        # Mengubah data NIM
     def ubah(self, nama):
-        input_nama = input("Nama yang ingin di ubah : ")
+        print("Ubah data NIM")
+        print("="*15)
+        input_nama = input("Masukan Nama : ")
         if input_nama in nama:
             index = nama.index(input_nama)
             self.nim[index]     = int(input("NIM            : "))
 
-            print("\nData {0} berhasil di ubah".format(input_nama))
+            print("\nNIM Data {0} berhasil di ubah".format(input_nama))
         else:
-            print("NAMA {0} TIDAK ADA!".format(nama))
+            print("NAMA {0} TIDAK ADA! / ANDA BELUM MENAMBAHKAN DATA".format(input_nama))
     
     def cari(self):
         print("Mencari data")
