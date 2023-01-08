@@ -80,10 +80,11 @@ while True:
 Di program utama ini terdapat modul yg di import ke file `from view import input_nilai, view_nilai` &
 `from model import daftar_nilai`. Modul memungkinkan Anda menulis kode yang terdiri dari beberapa file dan membaginya menjadi bagian-bagian yang lebih kecil, yang dapat diimport sesuai kebutuhan.
 
-#### Contoh tampilan menu
+#### Contoh tampilan menu :
+![1](Picture/Gambar1.png)
 
 ### 2. `daftar_nilai.py`
-Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah : ")`
+Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah] ")`
 
 ``` Python
 class Data_mahasiswa:
@@ -157,14 +158,15 @@ class Data_mahasiswa:
 ### Penjelasan 
 Pada bagian dari `daftar_nilai.py` berisi program dengan perintah menambahkan data, hapus data, ubah data NIM,
 dan mencari salah satu data yg sudah di input.
+
 #### Tampilan output tambah data :
-![1]
+![2](Picture/Gambar2.png)
 #### Tampilan output hapus data :
-![2] 
+![3](Picture/Gambar3.png) 
 #### Tampilan output ubah NIM :
-![3]
+![4](Picture/Gambar4.png)
 #### Tampilan output cari data :
-![4]
+![5](Picture/Gambar5.png)
 
 
 ### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
@@ -186,7 +188,8 @@ def lihat():
 ```
 ### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
-dengan syntax `from model import daftar_nilai`. 
+dengan syntax `from model import daftar_nilai`. Fungsi ny mirip seperti `input = "[(C)ari]"`, tapi fitur ini menampilkan
+seluruh data yg sudah di input.
 
 ### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
 
@@ -211,4 +214,7 @@ def nilai():
 ```
 ### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `input_nilai.py` kedalam file program `daftar_nilai.py` 
-dengan syntax `from model import daftar_nilai`. 
+dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
+
+#### Tampilan output `input_nilai.py` :
+![6]()
