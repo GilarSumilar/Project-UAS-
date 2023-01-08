@@ -217,4 +217,4 @@ Di program ini terdapat modul yg menyambungkan `input_nilai.py` kedalam file pro
 dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
 
 #### Tampilan output `input_nilai.py` :
-![6]()
+![6](Picture/Gambar6.png)
