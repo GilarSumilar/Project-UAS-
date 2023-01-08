@@ -84,7 +84,7 @@ Di program utama ini terdapat modul yg di import ke file `from view import input
 ![1](Picture/Gambar1.png)
 
 ### 2. `daftar_nilai.py`
-Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah : ")`
+Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah] ")`
 
 ``` Python
 class Data_mahasiswa:
@@ -188,7 +188,8 @@ def lihat():
 ```
 ### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
-dengan syntax `from model import daftar_nilai`. 
+dengan syntax `from model import daftar_nilai`. Fungsi ny mirip seperti `input = "[(C)ari]"`, tapi fitur ini menampilkan
+seluruh data yg sudah di input.
 
 ### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
 
@@ -213,4 +214,7 @@ def nilai():
 ```
 ### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `input_nilai.py` kedalam file program `daftar_nilai.py` 
-dengan syntax `from model import daftar_nilai`. 
+dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
+
+#### Tampilan output `input_nilai.py` :
+![6]()
