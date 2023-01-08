@@ -41,7 +41,7 @@ class Data_mahasiswa:
     def ubah(self, nama):
         print("Ubah data NIM")
         print("="*15)
-        input_nama = input("Masukan Nama : ")
+        input_nama = input("Masukan Nama   : ")
         if input_nama in nama:
             index = nama.index(input_nama)
             self.nim[index]     = int(input("NIM            : "))
