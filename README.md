@@ -23,7 +23,7 @@ memasukkan data.
 pilihan yang memanggil semua menu
 yang ada)
 
-#### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nputNilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
+### 1. `main.py` Berisi program utama dengan menu `menu = input("[(T)ambah, (I)nputNilai, (L)ihat, (C)ari, (H)apus, (U)bah, (K)eluar] : ")`
 
 ``` Python
 from view import input_nilai, view_nilai
@@ -76,11 +76,13 @@ while True:
     else:
         print("\n INPUT {} TIDAK ADA!, Silakan pilih [T/L/I/H/U/K] untuk menjalankan program!".format(menu))
 ```
-#### Penjelasan 
+### Penjelasan 
 Di program utama ini terdapat modul yg di import ke file `from view import input_nilai, view_nilai` &
 `from model import daftar_nilai`. Modul memungkinkan Anda menulis kode yang terdiri dari beberapa file dan membaginya menjadi bagian-bagian yang lebih kecil, yang dapat diimport sesuai kebutuhan.
 
-#### 2. `daftar_nilai.py`
+#### Contoh tampilan menu
+
+### 2. `daftar_nilai.py`
 Di dalam file daftar nilai ini terdapat sourcecode `input("[(T)ambah, (C)ari, (H)apus, (U)bah : ")`
 
 ``` Python
@@ -152,12 +154,20 @@ class Data_mahasiswa:
             print("NAMA {0} TIDAK ADA!".format(nama))
 ```
 
-#### Penjelasan 
+### Penjelasan 
 Pada bagian dari `daftar_nilai.py` berisi program dengan perintah menambahkan data, hapus data, ubah data NIM,
-dan mencari salah satu data yg sudah di input, Contoh :
+dan mencari salah satu data yg sudah di input.
+#### Tampilan output tambah data :
 ![1]
+#### Tampilan output hapus data :
+![2] 
+#### Tampilan output ubah NIM :
+![3]
+#### Tampilan output cari data :
+![4]
 
-#### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
+
+### 3. `view_nilai.py` berisi sourcode yg berfungsi menampilkan seluruh data
 
 ``` Python
 from model import daftar_nilai
@@ -174,11 +184,11 @@ def lihat():
         print(f"Nilai UAS     : {data.uas[i]}")
         print(f"Nilai TUGAS   : {data.tugas[i]}")
 ```
-#### Penjelasan 
+### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `view_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. 
 
-#### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
+### 4. `input_nilai.py` berisi code yg berfungsi untuk menginput data yaitu nilai
 
 ``` Python
 from model import daftar_nilai
@@ -199,6 +209,6 @@ def nilai():
         else:
             print("NAMA {0} TIDAK ADA! / ANDA BELUM MENAMBAH DATA".format(input_nama))
 ```
-#### Penjelasan 
+### Penjelasan 
 Di program ini terdapat modul yg menyambungkan `input_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. 
