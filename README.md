@@ -213,7 +213,7 @@ def nilai():
             print("NAMA {0} TIDAK ADA! / ANDA BELUM MENAMBAH DATA".format(input_nama))
 ```
 ### Penjelasan 
-Di program ini terdapat modul yg menyambungkan `input_nilai.py` kedalam file program `daftar_nilai.py` 
+Di program ini terdapat modul yg menyambungkann `input_nilai.py` kedalam file program `daftar_nilai.py` 
 dengan syntax `from model import daftar_nilai`. Fitur ini khusus untuk menginput nilai
 
 #### Tampilan output `input_nilai.py` :
