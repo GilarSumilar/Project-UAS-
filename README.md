@@ -7,6 +7,7 @@
 | **NIM** | 312210407 |
 | **Kelas** | TI.22.A.4 |
 | **Mata Kuliah** | Bahasa Pemrograman |
+| **Link vidio Penjelasan** | https://www.youtube.com/watch?v=8MzmLtOLDOk|
 
 # UAS
 
